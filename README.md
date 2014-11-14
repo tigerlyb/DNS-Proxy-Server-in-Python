@@ -1,20 +1,15 @@
-DNSProxyServer-in-Python
-========================
-
-Course Project
-
+DNS Proxy Server 
+================
 
 Source code: DNSserver.py
 
-For Testing
-Run the server at port 6760: 
-Python DNSserver.py 128.192.1.9 6760
+For Testing: 
+Run the server at port 6760: python DNSserver.py 128.192.1.9 6760
 
 Test the server: 
 dig -p 6760 @172.17.152.18 www.uga.com
 
-If an UDP DNS request is coming, the server will start a new thread to handler this request, convert the UDP request to TCP and send it to the upstream DNS server. If the request is not a DNS query, the server will drop it.
-When the server got the TCP answer from upstream DNS server, it will convert to UDP answer and send it back to the client.
+If an UDP DNS request is coming, the server will start a new thread to handler this request, convert the UDP request to TCP and send it to the upstream DNS server. If the request is not a DNS query, the server will drop it. When the server got the TCP answer from upstream DNS server, it will convert to UDP answer and send it back to the client.
 
 By Yibin Liao
 
