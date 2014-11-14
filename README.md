@@ -4,7 +4,7 @@ DNS Proxy Server
 Source code: DNSserver.py
 
 For Testing: 
-Run the server at port 6760: python DNSserver.py 128.192.1.9 6760
+Run the server at port 6760 as the follow command: python DNSserver.py 128.192.1.9 6760
 
 Test the server: 
 dig -p 6760 @172.17.152.18 www.uga.com
